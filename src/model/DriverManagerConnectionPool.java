@@ -21,11 +21,11 @@ public class DriverManagerConnectionPool  {
 	
 	private static synchronized Connection createDBConnection() throws SQLException {
 		Connection newConnection = null;
-		String ip = "localhost";
-		String port = "3306";
+		String ip = "";
+		String port = "";
 		String db = "cinemaDB?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-		String username = "root";
-		String password = "marcodbroot2";
+		String username = "";
+		String password = "";
 
 		newConnection = DriverManager.getConnection("jdbc:mysql://"+ ip+":"+ port+"/"+db, username, password);
 
