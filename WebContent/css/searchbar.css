@@ -1,0 +1,78 @@
+#cinemaButton{
+	width: 100%;
+	padding: 5%;
+	background-color: yellow;
+	border: 1px;
+	color: red;
+}
+
+#cinemaButton:hover{
+	background-color: red;
+	color:yellow;
+}
+
+#full-content {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+	top: 33%;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: orange;
+}
+
+.closebtn:hover {
+    color: red;
+}
+
+.overlay input[type=text] {
+	padding: 15px;
+	font-size: 17px;
+	border: none;
+	width: 25%;
+	background: white;
+	position: relative;
+	left: 31%;
+    background-color: orange;
+	color: red;
+}
+
+.overlay button#submitbar {
+	position: relative;
+	width: 5%;
+	padding: 15px;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	left: 31%;
+	background-color: red;
+	color: oldlace;
+}
+
+#resultSearch{
+	background-color: orange;
+	position: absolute;
+	left: 31%;
+	width: 20%;
+}

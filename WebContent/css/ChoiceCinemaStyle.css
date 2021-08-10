@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+div.modalReg {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+div.choice-country {
+  position: relative;
+  background-color: #1d1d1d;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  height: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 1.2s;
+  animation-name: animatetop;
+  animation-duration: 1.2s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {bottom:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {bottom:0; opacity:1}
+}
+
+/* The Close Button */
+span.closereg {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+span.closereg:hover,
+span.closereg:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+div.header {
+  padding: 2px 16px;
+  background-color: #9c201e;
+  color: white;
+}
+
+div.body {padding: 2px 16px;}
+
+.dropbtn-cinema {
+  background-color: #af2715;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: 100%;
+}
+
+.dropdown-cinema {
+  position: relative;
+ display: inline-block;
+ width: 100%;
+}
+
+.dropdown-content-cinema {
+  display: none;
+  position: absolute;
+  background-color: #f1e75b;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown-content-cinema form{
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-cinema button#cinButton{
+	background-color: #f1e75b;
+	border: none;
+}
+
+.dropdown-content-cinema button#cinButton:focus {
+	background-color: #8e3518;
+}
+
+.dropdown-content-cinema form:hover button#cinButton{
+	background-color: #8e3518;
+}
+
+.dropdown-content-cinema form:hover {background-color: #8e3518;color:white;}
+
+.dropdown-cinema:hover .dropdown-content-cinema {display: block;}
+
+.dropdown-cinema:hover .dropbtn-cinema {background-color: #8e3518;}

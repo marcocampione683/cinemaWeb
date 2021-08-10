@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body{
+	background-color:red;
+}
+
+nav{
+	background-color:yellow;
+}
+
+b{
+	position:relative;
+	left:38%;
+	top:150px;
+	font-size:200%;
+}
+
+nav a{
+	position: relative;
+	left: 50%;
+}
+
+nav a:hover{
+	color: red;
+	text-decoration: underline;
+	text-shadow: 4px 4px 11px orange;
+	box-shadow: insert 0 0 10px #777777;
+}
+
+a:link{
+	color: red;
+	text-decoration: none;
+}
+
+a:visited{
+	color: grey;
+}
+
+#btnReg{
+	position: relative;
+	top: 250px;
+	left: 24%;
+	background-color: orange;
+	border-radius: 5px;
+	padding: 15px;
+}

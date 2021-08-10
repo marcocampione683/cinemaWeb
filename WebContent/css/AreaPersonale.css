@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+body{
+	background-image: url("../image/pop-corn.jpg");
+	width: 65%;
+	margin: 0 auto;
+}
+
+header{
+	padding: 10px;
+	margin: 10px;
+	background-color: rgba(204,171,131,0.5);
+}
+
+#intestazione{
+	text-align:center;
+}
+
+legend{
+	color:red;
+}
+
+#dati{
+	float: left;
+	width: 30%;
+	border: 1px solid yellow;
+	position: relative;
+	left: 5%;
+}
+
+#datiAggiornati{
+ 	width: 40%;
+	position: relative;
+	left: 20%;
+	border: 1px solid yellow;
+}
+
+#updatebtn, #annulla, #confirmUpdate, #conferma, #btnmodify{
+	background-color: red;
+	border: none;
+	padding: 5px;
+	color: yellow;
+}
+
+#updatebtn:hover, #annulla:hover, #confirmUpdate:hover, #conferma:hover, #btnmodify:hover{
+	background-color: green;
+	color:black;
+}
+
+#confirmUpdate, #annulla, #mexConfirm{
+	display: none;
+	
+}
+
+#mexConfirm{
+	display: none;
+	color: green;
+	
+}
+
+#cart{
+	width: 60px;
+}
+
+#cartContainer{
+	overflow: auto;
+	max-height: 400px;
+}
+
+#prenotazioniContainer{
+	overflow: auto;
+	max-height: 400px;
+	position: relative;
+	top: 40px;
+}
+table{
+	border: 1px solid black;
+	width: 100%;
+	background-color: rgba(0,102,204,0.4);
+}
+
+tr{
+	border: 1px solid black;
+}
+
+#informationSpett{
+	line-height: 2em;
+}
+
+.mex{
+	color: red;
+	background-color: wheat;
+}
+
+.infoSpett{
+	background-color: #ef6742;
+	width:90%;
+}
+
+.img{
+	float: left;
+	margin-right: 10px;
+}
+
+#cestino,#cestino2{
+	width: 100px;
+	height: 100px;
+}
+
+#cestino:hover, #cestino2:hover{
+	box-shadow: inset 0 0 10px orange;
+}
+
+nav {
+	text-align: center;
+}
+
+nav a{
+	margin-right: 60px;
+	color: grey;
+}
+
+nav a:link{
+	color: orange;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: white;
+	text-decoration: underline;
+	text-shadow: 4px 4px 11px orange;
+	box-shadow: insert 0 0 10px #777777;
+}
+
+nav a:visited{
+	color: grey;
+}
+
+#DataUser{
+	background-color: orange;
+}
+
+/*//////////////////////////////////////opzione admin*/
+
+.dropdown{
+	float: right;
+	position: relative;
+	right: 14%;
+	bottom: 6px;
+}
+
+.dropdown .dropbtn {
+  color: red;
+  background-color: yellow;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border: none;
+  font-size: 13pt;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: orange; 
+  color:white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 78px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border:none;
+  width: 78px;
+  background-color: red;
+}
+
+.dropdown-content button:hover {
+  background-color: yellow;
+  color:red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/*///////////////////////////////////layout responsive*/
+
+@media screen and (max-width: 800px) {
+
+	#datiAggiornati{
+		left:12%;
+	}
+}
+
+@media screen and (max-width: 504px) {
+
+	#datiAggiornati{
+		left: 24%;
+	}
+	
+	#dati{
+		left: 24%;
+	}
+}

@@ -1,0 +1,414 @@
+@charset "UTF-8";
+
+.sez_dx {
+	width: 48%;
+	max-height: 560px;
+	float:right;
+	margin: 5px;
+	background-color: rgba(204,171,131,0.5);
+}
+
+.sez_sx {
+	width: 48%;
+	max-height: 700px;
+	float:left;
+	margin: 5px;
+	background-color: rgba(204,171,131,0.5);
+}
+
+header{
+	padding: 10px;
+	margin: 10px;
+	background-color: rgba(204,171,131,0.5);
+}
+
+body{
+	width: 60%;
+	margin: 0 auto;
+	background-image: url("../image/sfondospettacoli.jpg");
+}
+
+h3{
+	text-align: center;
+	color: orange;
+	font-style: italic;
+	background-color: red;
+}
+
+#boxfilm{
+	overflow: scroll;
+	max-height: 500px;
+}
+
+nav {
+	text-align: center;
+}
+
+nav a.linknav{
+	margin-right: 60px;
+	color: grey;
+}
+
+nav a.linknav:link{
+	color: orange;
+	text-decoration: none;
+}
+
+nav a.linknav:hover{
+	color: white;
+	text-decoration: underline;
+	text-shadow: 4px 4px 11px orange;
+	box-shadow: insert 0 0 10px #777777;
+}
+
+nav a.linknav:visited{
+	color: grey;
+}
+
+#img_cinema{
+	width: 1120px;
+	height: 500px;
+	position: relative;
+	left: 1%;
+}
+
+h1#nomeCinema{
+	text-align: center;
+	color: orange;
+	font-style: bold;
+	text-shadow: -1px -2px black;
+}
+
+#locandina{
+	width: 288px;
+	height:412px;
+	position: relative;
+	left: 23%;
+	margin-bottom: 5px;
+}
+
+table{
+	border-collapse: collapse;
+	border-spacing: 1px 15px;
+}
+
+#containerShow{
+    width: 99%;
+    margin-bottom: 8px;
+}
+
+#calendar{
+    width: 200px;
+    float: left;
+}
+
+
+
+.hours{
+  background-color: #af4330;
+  border: solid 1px black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: copy;
+  border-radius: 100%;
+}
+
+.month{
+	background-color: red;
+	max-height: 5px;
+	width: 70px;
+}
+
+.day{
+	background-color: orange;
+}
+
+#totalContainer{
+	overflow: scroll;
+	max-height: 500px;
+}
+
+h5{
+	text-align: center;
+}
+
+h4{
+	text-align: center;
+	color: yellow;
+	text-shadow: -1px -2px black;
+}
+
+.hours:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*/////////////////////////////////////////////opzioni user*/
+#messaggio{
+	color: yellow;
+	text-shadow: -1px -2px black;
+	float: left;
+	position: relative;
+	left: 3%;
+}
+
+#carrello{
+	width: 50px;
+	height: 50px;
+	float: right;
+	border-radius: 100%;
+	position: absolute;
+	top: 0%;
+	cursor: pointer;
+	right: 21%;
+}
+
+#carrello:hover{
+	box-shadow: inset 0 0 10px orange;
+}
+
+/*////////////////////////////////////////////////////////////opzione admin*/
+
+.dropdown{
+	float: right;
+	position: relative;
+	right: 14%;
+	bottom: 24px;
+}
+
+.dropdown .dropbtn {
+  color: red;
+  background-color: yellow;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border: none;
+  font-size: 13pt;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: orange; 
+  color:white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: yellow;
+  min-width: 78px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content button {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border:none;
+  width: 78px;
+  background-color: red;
+}
+
+.dropdown-content button:hover {
+  background-color: yellow;
+  color:red;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*/////////////////////////////////////////////////////////////////////LOGIN*/
+.containerLogin input[type=text], .containerLogin input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtnLogin, .logBtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.keyImg {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.containerLogin{
+  padding: 16px;
+  background-color:yellow;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.modalLogin {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+.modal-contentLogin {
+  background-color: black;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 50%; 
+}
+
+.closeLogin {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: yellow;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.closeLogin:hover,
+.closeLogin:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+#userSpan, #passSpan{
+	color: red;
+	display: none;
+}
+
+@media screen and (max-width: 800px){
+    body{
+        width: 90%;
+    }
+
+    #img_cinema{
+        width: 690px;
+		height: 350px;
+		left:1%;
+    }
+
+    #locandina{
+        width: 200px;
+        height: 300px;
+    }
+
+    fieldset, iframe{
+        width: 690px;
+    }
+    
+    #carrello{
+    	right: 7%;
+    }
+
+}
+
+@media screen and (max-width: 504px) {
+
+    h1#nomeCinema{
+        font-size: 150%;
+    }
+
+    #img_cinema{
+        display: none;
+    }
+
+    #locandina{
+        width: 140px;
+        height: 200px;
+    }
+
+    #boxfilm{
+        height: 87%;
+    }
+
+    .sez_sx{
+        width: 60%;
+		height: 472px;
+		position: relative;
+		left: 20%;
+    }
+
+    .sez_dx{
+        float: left;
+		position: relative;
+		left: 20%;
+		width: 60%;
+		height: 472px;
+    }
+    
+    #totalContainer{
+    	height: 411px;
+    }
+
+    fieldset, iframe{
+     	display: none;
+    }
+    
+    #carrello{
+    	width: 40px;
+		height: 40px;
+		top:1%;
+    }
+    
+    .linknav{
+    	margin-left: -33px;
+    }
+
+	.dropdown{
+		left: -8%;
+	}
+}
